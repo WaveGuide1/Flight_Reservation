@@ -24,9 +24,10 @@ class Flight(models.Model):
     time_departure = models.TimeField()
 
     def __str__(self):
-        return self.operation_date + ' ' + self.flight_number
+        return self.operating_airline + ' Flight ' + self.flight_number
 
 
 class Reservation(models.Model):
-    passenger = models.OneToOneField(Flight, on_delete=models.CASCADE)
-    flight = models.OneToOneField(Passenger, on_delete=models.CASCADE)
+    passenger = models.OneToOneField(Passenger, on_delete=models.CASCADE)
+    flight = models.OneToOneField(Flight, on_delete=models.CASCADE)
+

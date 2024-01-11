@@ -4,13 +4,13 @@ from rest_framework import serializers
 
 class PassengerSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Flight
+        model = Passenger
         fields = '__all__'
 
 
 class FlightSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Passenger
+        model = Flight
         fields = '__all__'
 
 
