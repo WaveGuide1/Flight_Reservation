@@ -14,11 +14,6 @@ class FlightSerializer(serializers.ModelSerializer):
         model = Flight
         fields = '__all__'
 
-    def validate(self, data):
-        if re.match("^[0-9]*$", data['flight_number']) is None:
-            raise serializers.ValidationError("Flight number must be a digit")
-        return data['flight_number']
-
 
 class ReservationSerializer(serializers.ModelSerializer):
     class Meta:
