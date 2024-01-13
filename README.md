@@ -51,32 +51,51 @@ Flight Reservation REST API
 ADD USER FROM ADMIN PANEL
 
 ## Flight Routes (Required Auth)
+
 [DELETE] http://127.0.0.1:8000/api/flight_reservation/flight/<ID>/
+
 [GET] http://127.0.0.1:8000/api/flight_reservation/flight/<ID>/
+
 [GET] http://127.0.0.1:8000/api/flight_reservation/flight/
+
 [POST] http://127.0.0.1:8000/api/flight_reservation/flight/
+
 [PUT] http://127.0.0.1:8000/api/flight_reservation/flight/<ID>/
 
+
 ## Passenger Routes
+
 [GET] http://127.0.0.1:8000/api/flight_reservation/passenger/<ID>/
+
 [GET] http://127.0.0.1:8000/api/flight_reservation/passenger/
+
 [PUT] http://127.0.0.1:8000/api/flight_reservation/passenger/<ID>/
+
 [POST] http://127.0.0.1:8000/api/flight_reservation/passenger/
+
 [DELETE] http://127.0.0.1:8000/api/flight_reservation/passenger/<ID>/
 
+
 ## Reservation Routes
+
 [GET] http://127.0.0.1:8000/api/flight_reservation/reservation/
+
 [GET] http://127.0.0.1:8000/api/flight_reservation/reservation/<ID>/
+
 [DELETE] http://127.0.0.1:8000/api/flight_reservation/reservation/<ID>/
+
 [PUT] http://127.0.0.1:8000/api/flight_reservation/reservation/<ID>
 
+
 ## Query Routes
+
 Find Reservation
 [POST] http://127.0.0.1:8000/api/flight_reservation/find_flight/
 Required fields
 operation_date
 departure_country
 arrival_country
+
 
 Save Reservation
 [POST] http://127.0.0.1:8000/api/flight_reservation/save_reservation/
